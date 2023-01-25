@@ -97,6 +97,7 @@ export default function NFTDrop() {
     </div>
         
         )}
+        
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
       </div>
       <div className={`${styles.lightGreen} transparentbox`}>
