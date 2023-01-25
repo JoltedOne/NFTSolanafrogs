@@ -52,7 +52,7 @@ export default function NFTDrop() {
           </p>
         </div>
         <img
-          src={`https://i.imgur.com/7ZfSXV3.jpg`}
+          src={`./public/Generate.jpg`}
           alt={"Example NFT Image"}
           width={300}
           height={300}
