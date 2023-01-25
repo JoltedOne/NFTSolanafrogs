@@ -7,9 +7,12 @@ import { useProgram, useClaimNFT } from "@thirdweb-dev/react/solana";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { WrongListingTypeError } from "@thirdweb-dev/sdk";
 import ClaimedSupply from './claimedSupply';
+import frogbg from "../images/Frogbg.png";
+import genera from "../images/Generate.jpg";
+
 
 // Default styles that can be overridden by your app
-require("@solana/wallet-adapter-react-ui/buttstyles.css");
+require("@solana/wallet-adapter-react-ui/styles.css");
 
 const WalletMultiButtonDynamic = dynamic(
   async () =>
@@ -28,8 +31,8 @@ export default function NFTDrop() {
       <div className={styles.collectionContainer}>
         <div className={styles.detailPageContainer}>
           <h1>
-          <img
-            src={`./nonfroglogobanner.png`}
+          <Image 
+            src= {frogbg}
             alt={"Example NFT Image"}
              width={350}
             height={300}
@@ -52,7 +55,7 @@ export default function NFTDrop() {
           </p>
         </div>
         <img
-          src={`./public/Generate.jpg`}
+          src={'https://i.imgur.com/7ZfSXV3.jpg'}
           alt={"Example NFT Image"}
           width={300}
           height={300}

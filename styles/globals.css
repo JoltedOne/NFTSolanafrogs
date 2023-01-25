@@ -32,7 +32,7 @@ select {
 
 body {
   
-  background-image: ("./public/Frogbg.png");
+  background-image: (require("./images/Frogbg.png"));
   font-family: "Inter", sans-serif;
   color: var(--white);
   display: flex;
