@@ -9,7 +9,7 @@ import { WrongListingTypeError } from "@thirdweb-dev/sdk";
 import ClaimedSupply from './claimedSupply';
 
 // Default styles that can be overridden by your app
-require("@solana/wallet-adapter-react-ui/buttnstyles.css");
+require("@solana/wallet-adapter-react-ui/buttstyles.css");
 
 const WalletMultiButtonDynamic = dynamic(
   async () =>
