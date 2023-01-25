@@ -25,6 +25,52 @@
   font-size: 1.125rem;
 }
 
-.lightPurple {
+.lightGreen {
   color: #64e011;
+}
+
+.wallet-adapter-button-trigger {
+  background-color: #56c000;
+}
+
+.transparentbox {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  grid-template-columns: 1fr;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 767px){
+.greentext {
+  text-align: center;
+  display: block;
+  color: rgb(45, 141, 1);
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10 auto;
+}
+
+.lightYellow {
+  color: #a1ce00;
+}
+
+.storycontainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  padding: 0 20px;
 }

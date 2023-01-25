@@ -24,14 +24,15 @@ select {
 }
 
 :root {
-  --background-color: #1c1e21;
-  --white: #ffffff;
+  --background-color: #1d211c;
+  --white: #60b400;
   --tw-color1: #1f9c00;
   --tw-color1-hover: #95ea33;
 }
 
 body {
-  background: var(--background-color);
+  
+  background-image: url(https://i.imgur.com/egKrTm7.jpg);
   font-family: "Inter", sans-serif;
   color: var(--white);
   display: flex;
@@ -41,4 +42,34 @@ body {
 
 h2 {
   font-size: 2rem;
+}
+
+.wallet-adapter-button-trigger {
+  background-color: #56c000;
+}
+
+.transparentbox {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  grid-template-columns: 1fr;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 767px){
+.greentext {
+  text-align: center;
+  display: block;
+  color: rgb(46, 145, 0);
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
