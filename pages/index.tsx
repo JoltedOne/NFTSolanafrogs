@@ -95,9 +95,8 @@ export default function NFTDrop() {
     <div className={styles.center}>
           <WalletMultiButtonDynamic />
     </div>
-        
         )}
-        
+
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
       </div>
       <div className={`${styles.lightGreen} transparentbox`}>
