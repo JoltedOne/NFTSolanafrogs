@@ -67,6 +67,7 @@ export default function NFTDrop() {
             marginRight: "0px",
           }}
         />
+        <div className={styles.container}>
         {wallet.connected ? (
           <button
             className={styles.center}
@@ -89,12 +90,13 @@ export default function NFTDrop() {
               : claim.isSuccess
               ? "Success!"
               : "Mint Frog"}
-          </button>
+          </button> 
         ) : (
-          
+        
     <div className={styles.center}>
           <WalletMultiButtonDynamic />
     </div>
+    
         )}
 
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
@@ -133,6 +135,7 @@ export default function NFTDrop() {
     </div>
     </div>
     </div>
+  </div>
   </div>
   );
 }
