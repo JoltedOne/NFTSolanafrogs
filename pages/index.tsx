@@ -92,7 +92,7 @@ export default function NFTDrop() {
           </button>
         ) : (
           
-    <div className={styles.center}>
+    <div className='center'>
           <WalletMultiButtonDynamic />
     </div>
         
