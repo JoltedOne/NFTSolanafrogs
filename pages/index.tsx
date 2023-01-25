@@ -9,6 +9,7 @@ import { WrongListingTypeError } from "@thirdweb-dev/sdk";
 import ClaimedSupply from './claimedSupply';
 import frogbg from "../images/Frogbg.png";
 import genera from "../images/Generate.jpg";
+import nonfroglogobanner from "../images/nonfroglogobanner.png";
 
 
 // Default styles that can be overridden by your app
@@ -32,7 +33,7 @@ export default function NFTDrop() {
         <div className={styles.detailPageContainer}>
           <h1>
           <Image 
-            src= {frogbg}
+            src= {nonfroglogobanner}
             alt={"Example NFT Image"}
              width={350}
             height={300}
@@ -54,8 +55,8 @@ export default function NFTDrop() {
             </b></a>
           </p>
         </div>
-        <img
-          src={'https://i.imgur.com/7ZfSXV3.jpg'}
+        <Image
+          src={genera}
           alt={"Example NFT Image"}
           width={300}
           height={300}
@@ -68,7 +69,7 @@ export default function NFTDrop() {
         />
         {wallet.connected ? (
           <button
-            className={styles.bttnstyles}
+            className={styles.styles}
             onClick={() =>
               claim.mutate(
                 { amount: 1 },
@@ -91,9 +92,9 @@ export default function NFTDrop() {
           </button>
         ) : (
           
-          <div className='center'>
+    <div className={styles.center}>
           <WalletMultiButtonDynamic />
-       </div>
+    </div>
         
         )}
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
