@@ -70,7 +70,7 @@ h2 {
 }
 
 .center {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
 }
