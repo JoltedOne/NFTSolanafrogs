@@ -69,7 +69,7 @@ export default function NFTDrop() {
         />
         {wallet.connected ? (
           <button
-            className={styles.styles}
+            className={styles.center}
             onClick={() =>
               claim.mutate(
                 { amount: 1 },
@@ -92,7 +92,7 @@ export default function NFTDrop() {
           </button>
         ) : (
           
-    <div className='center'>
+    <div className={styles.center}>
           <WalletMultiButtonDynamic />
     </div>
         
