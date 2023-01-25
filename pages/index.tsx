@@ -26,33 +26,27 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         <div className={styles.iconContainer}>
           <Image
-            src="/thirdweb.svg"
-            height={75}
-            width={115}
+            src="/nonfroglogobanner.png"
+            height={300}
+            width={360}
             style={{
               objectFit: "contain",
             }}
-            alt="thirdweb"
+            alt="NonFroggableToads"
           />
-          <Image
-            width={75}
-            height={75}
-            src="/sol.png"
-            className={styles.icon}
-            alt="sol"
-          />
+          
         </div>
-        <h1 className={styles.h1}>Solana, meet thirdweb 👋</h1>
+        <h1 className={styles.h1}>Discover the secret world of frogs and find the mimics among them! 👋</h1>
         <p className={styles.explain}>
-          Explore what you can do with thirdweb&rsquo;s brand new{" "}
+          Check out the{" "}
           <b>
             <a
-              href="https://portal.thirdweb.com/solana"
+              href="https://JoltedDesigns.com"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.lightPurple}
             >
-              Solana SDK
+              Izsapo Collection
             </a>
           </b>
           .
