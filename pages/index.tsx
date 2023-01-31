@@ -143,13 +143,11 @@ export default function NFTDrop() {
     </div>
     </div>
     </div>
-    function App() {
-  return (
+   
     <div className="App">
       <LinkButton />
     </div>
-  );
-}
+    
   </div>
   </div>
   );
