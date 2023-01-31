@@ -10,7 +10,7 @@ import ClaimedSupply from './claimedSupply';
 import frogbg from "../images/Frogbg.png";
 import genera from "../images/Generate.jpg";
 import nonfroglogobanner from "../images/nonfroglogobanner.png";
-
+import React, { Component } from 'react';
 
 // Default styles that can be overridden by your app
 require("@solana/wallet-adapter-react-ui/styles.css");
@@ -20,6 +20,14 @@ const WalletMultiButtonDynamic = dynamic(
     (await import("@solana/wallet-adapter-react-ui")).WalletMultiButton,
   { ssr: false }
 );
+
+const LinkButton: React.FC = () => {
+  return (
+    <a href="https://magiceden.io/marketplace/CnR3QT4eG19bQFvrC45NTUzebKbgnyqPGAoRzCYAm5Ti?activeTab=items" target="_blank" rel="noopener noreferrer">
+      <button>Visit Marketplace</button>
+    </a>
+  );
+};
 
 export default function NFTDrop() {
   const wallet = useWallet();
@@ -135,6 +143,13 @@ export default function NFTDrop() {
     </div>
     </div>
     </div>
+    function App() {
+  return (
+    <div className="App">
+      <LinkButton />
+    </div>
+  );
+}
   </div>
   </div>
   );
