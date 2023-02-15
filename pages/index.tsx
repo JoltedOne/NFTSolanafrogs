@@ -41,7 +41,7 @@ const phases = [
   },
   {
     title: "Phase 3",
-    description: "500 Frogs Minted::Hoodies begin production::DAO construction::Token-gated site launch::Develop interactive platform.",
+    description: "500 Frogs Minted::Hoodies begin production::DAO construction::Token-gated site launch::Develop interactive platform",
   },
 ];
 
