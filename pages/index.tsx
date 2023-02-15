@@ -106,7 +106,7 @@ export default function NFTDrop() {
         <div className={styles.containerTwo}>
         {wallet.connected ? (
           <button
-            className={styles.center}
+          style={buttonGreen}
             onClick={() =>
               claim.mutate(
                 { amount: 1 },
