@@ -115,8 +115,8 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 20px;
-  padding: 20px;
-  margin: 20px;
+  padding: 5px;
+  margin: 10px;
   width: 100%;
   max-width: 400px;
 }
