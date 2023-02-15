@@ -75,3 +75,46 @@
   width: 60vw;
   padding: 0 20px;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 20px;
+}
+
+.phase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.phaseTitle {
+  font-size: 2rem;
+  margin: 0 0 20px 0;
+  color: #a1ce00;
+}
+
+.phaseDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.phaseText {
+  color: #64e011;
+  margin: 5px 0;
+  text-align: center;
+}

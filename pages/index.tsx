@@ -24,9 +24,33 @@ const WalletMultiButtonDynamic = dynamic(
 const LinkButton: React.FC = () => {
   return (
     <a href="https://magiceden.io/marketplace/CnR3QT4eG19bQFvrC45NTUzebKbgnyqPGAoRzCYAm5Ti?activeTab=items" target="_blank" rel="noopener noreferrer">
-      <button>Visit Marketplace</button>
+      <button style={buttonGreen}>Magic Eden</button>
     </a>
   );
+};
+
+const phases = [
+  {
+    title: "Phase 1",
+    description: "100 Frogs Minted::Eye models designed and printed::Patterns Designed::Test Fabrics",
+  },
+  {
+    title: "Phase 2",
+    description: "250 Frogs Minted::Eyes being casting production::Fabric ordered::Advanced concepting begins",
+  },
+  {
+    title: "Phase 3",
+    description: "500 Frogs Minted::Hoodies begin production::DAO construction::Token-gated site launch::Develop interactive platform.",
+  },
+];
+
+const buttonGreen = {
+  backgroundColor: '#A1CE00',
+  color: '#000',
+  padding: '10px 20px',
+  border: 'none',
+  borderRadius: '5px',
+  cursor: 'pointer'
 };
 
 export default function NFTDrop() {
@@ -39,6 +63,7 @@ export default function NFTDrop() {
     <div className={styles.container}>
       <div className={styles.collectionContainer}>
         <div className={styles.detailPageContainer}>
+        <a href="https://twitter.com/NonFrogToads">
           <h1>
           <Image 
             src= {nonfroglogobanner}
@@ -47,6 +72,7 @@ export default function NFTDrop() {
             height={300}
         />
           </h1>
+          </a>
 
          
             <div className={styles.lightYellow}>
@@ -143,12 +169,32 @@ export default function NFTDrop() {
     </div>
     </div>
     </div>
-   
+    <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+    <div className={styles.container}>
     <div className="App">
       <LinkButton />
     </div>
-    
+    </div>
+    <div className={styles.container}>
+      <div className={styles.columns}>
+        {phases.map((phase) => (
+          <div key={phase.title} className={styles.phase}>
+            <h2 className={styles.phaseTitle}>{phase.title}</h2>
+            <div className={styles.phaseDescription}>
+              {phase.description.split("::").map((text) => (
+                <p key={text} className={styles.phaseText}>
+                  {text}
+                </p>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  
   </div>
   </div>
   );
 }
+
+  
