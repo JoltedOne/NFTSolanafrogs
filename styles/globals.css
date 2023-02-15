@@ -26,8 +26,8 @@ select {
 
 :root {
   --background-color: #1d211c;
-  --white: #60b400;
-  --tw-color1: #1f9c00;
+  --white: #64e011;
+  --tw-color1: #64e011;
   --tw-color1-hover: #95ea33;
 }
 
@@ -48,7 +48,7 @@ h2 {
 }
 
 .wallet-adapter-button-trigger {
-  background-color: #56c000;
+  background-color: #64e011;
 }
 
 .transparentbox {
@@ -67,7 +67,7 @@ h2 {
 .greentext {
   text-align: center;
   display: block;
-  color: rgb(63, 199, 0);
+  color: #64e011;
   }
 }
 
