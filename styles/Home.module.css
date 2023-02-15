@@ -118,11 +118,11 @@
   padding: 5px;
   margin: 1px;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .phaseTitle {
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin: 0 0 10px 0;
   color: #a1ce00;
 }
@@ -135,6 +135,7 @@
 }
 
 .phaseText {
+  font-size: .75rem
   color: #64e011;
   margin: 4px 0;
   text-align: center;
