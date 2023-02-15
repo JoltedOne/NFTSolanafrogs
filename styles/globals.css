@@ -34,6 +34,7 @@ select {
 body {
   
   background-image: url(https://i.imgur.com/egKrTm7.jpg);
+  background-size: cover;
   background-position: center;
   font-family: "Inter", sans-serif;
   color: var(--white);
@@ -66,7 +67,7 @@ h2 {
 .greentext {
   text-align: center;
   display: block;
-  color: rgb(46, 145, 0);
+  color: rgb(63, 199, 0);
   }
 }
 
