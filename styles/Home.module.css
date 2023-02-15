@@ -123,7 +123,7 @@
 
 .phaseTitle {
   font-size: 2rem;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   color: #a1ce00;
 }
 
@@ -136,7 +136,7 @@
 
 .phaseText {
   color: #64e011;
-  margin: 5px 0;
+  margin: 1px 0;
   text-align: center;
 }
 
