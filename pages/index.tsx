@@ -36,7 +36,7 @@ const phases = [
   },
   {
     title: "Phase 2",
-    description: "250 Frogs Minted::Eyes being casting production::Fabric ordered::Advanced concepting begins",
+    description: "250 Frogs Minted::Eyes sent to production::Fabric ordered::Advanced concepting begins",
   },
   {
     title: "Phase 3",
