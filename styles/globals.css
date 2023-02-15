@@ -34,6 +34,7 @@ select {
 body {
   
   background-image: url(https://i.imgur.com/egKrTm7.jpg);
+  background-position: center;
   font-family: "Inter", sans-serif;
   color: var(--white);
   display: flex;
