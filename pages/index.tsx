@@ -100,9 +100,10 @@ export default function NFTDrop() {
             marginBottom: "30px",
             marginLeft: "20px",
             marginRight: "0px",
+            borderRadius: "25%",
           }}
         />
-        <div className={styles.container}>
+        <div className={styles.containerTwo}>
         {wallet.connected ? (
           <button
             className={styles.center}
@@ -128,47 +129,44 @@ export default function NFTDrop() {
           </button> 
         ) : (
         
-    <div className={styles.center}>
+      <div className={styles.containerTwo}>
           <WalletMultiButtonDynamic />
-    </div>
-    
-        )}
- </div>
- 
-    <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+      </div>
+      )}
      
-    <div className={styles.center}>
-    <div className={styles.transparentbox}>
-    <div className={styles.lightgreen}>
-     <ClaimedSupply program={program} />
-    </div>  
-    </div> 
-   </div>
-   </div>
+       
 
-   <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
-      
-
-  
-    
-    <div className={styles.transparentbox}>
-    <LineProgressBar percent={60}
-    progressColor="linear-gradient(to right, #d2ff00, #54ff00)"
-    containerColor="#4c8320" 
-    rounded={30}
-    height={60}
-     />
+    <div className={styles.containerTwo}>
+       <div className={styles.transparentbox}>
+       <div className={styles.lightgreen}>
+       <ClaimedSupply program={program} />
+       </div>  
+      </div> 
+     </div>
     </div>
-    
-    
 
-      <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+     
+    <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+      
+   <div className={styles.containerTwo}>
+   <div className={styles.transparentbox}>
+     <LineProgressBar percent={6}
+     progressColor="linear-gradient(to right, #d2ff00, #54ff00)"
+     containerColor="#4c8320" 
+     rounded={30}
+     height={60}
+     />
+   </div>
+   </div>
 
-
-  <div className={styles.storycontainer}>
     
-    <div className={styles.transparentbox}>
-    <div className={styles.greentext}>
+   <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+    
+    <div className={styles.containerTwo}>
+      <div className={styles.storycontainer}>
+    
+     <div className={styles.transparentbox}>
+      <div className={styles.greentext}>
         <div className={styles.lightYellow}>
           <h2>Once upon a time...</h2></div>
       <p>
@@ -188,18 +186,20 @@ export default function NFTDrop() {
       </p>
 
       <p>So, join us on this journey, as we explore the world of these unique frogs, and discover the secrets that they hold. But be warned, not everything may be as it seems, and some of the frogs that you encounter may not be frogs at all.</p>
+     </div>
+     </div>
     </div>
-</div>
-    <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
 
-    <div className={styles.container}>
+    
+
+   <div className={styles.containerTwo}>
     <div className="App">
       <LinkButton />
     </div>
     
-    </div>
+   </div>
     
-    <div className={styles.container}>
+    <div className={styles.containerTwo}>
       <div className={styles.columns}>
         {phases.map((phase) => (
           <div key={phase.title} className={styles.phase}>
@@ -213,12 +213,12 @@ export default function NFTDrop() {
             </div>
           </div>
         ))}
+       </div>
       </div>
-    </div>
   
-  </div>
- </div>
+     </div>
+    </div>
+    </div>
   );
 }
 
-  
