@@ -136,8 +136,8 @@ export default function NFTDrop() {
      
        
 
-    <div className={styles.containerTwo}>
-       <div className={styles.transparentbox}>
+    <div className={styles.containerThree}>
+       <div className={styles.transparentboxtwo}>
        <div className={styles.lightgreen}>
        <ClaimedSupply program={program} />
        </div>  
@@ -148,19 +148,6 @@ export default function NFTDrop() {
      
     <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
       
-   <div className={styles.containerTwo}>
-   <div className={styles.transparentbox}>
-     <LineProgressBar percent={6}
-     progressColor="linear-gradient(to right, #d2ff00, #54ff00)"
-     containerColor="#4c8320" 
-     rounded={30}
-     height={60}
-     />
-   </div>
-   </div>
-
-    
-   <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
     
     <div className={styles.containerTwo}>
       <div className={styles.storycontainer}>
