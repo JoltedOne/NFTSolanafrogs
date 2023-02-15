@@ -44,6 +44,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  width: 60vw;
 }
 
 
@@ -117,4 +118,30 @@
   color: #64e011;
   margin: 5px 0;
   text-align: center;
+}
+
+.boxnew {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.boxtwo {
+  max-width: 400px; /* or any width that you prefer */
+  margin: 0 auto; /* to center the box */
+}
+
+.containertwo {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  padding: 0 24px;
 }

@@ -10,7 +10,8 @@ import ClaimedSupply from './claimedSupply';
 import frogbg from "../images/Frogbg.png";
 import genera from "../images/Generate.jpg";
 import nonfroglogobanner from "../images/nonfroglogobanner.png";
-import React, { Component } from 'react';
+import { LineProgressBar } from '@frogress/line'
+
 
 // Default styles that can be overridden by your app
 require("@solana/wallet-adapter-react-ui/styles.css");
@@ -132,19 +133,41 @@ export default function NFTDrop() {
     </div>
     
         )}
+ </div>
+ 
+    <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+     
+    <div className={styles.center}>
+    <div className={styles.transparentbox}>
+    <div className={styles.lightgreen}>
+     <ClaimedSupply program={program} />
+    </div>  
+    </div> 
+   </div>
+   </div>
 
-        <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
-      </div>
-      <div className={`${styles.lightGreen} transparentbox`}>
-        <ClaimedSupply program={program} />
+   <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+      
+
+  
+    
+    <div className={styles.transparentbox}>
+    <LineProgressBar percent={60}
+    progressColor="linear-gradient(to right, #d2ff00, #54ff00)"
+    containerColor="#4c8320" 
+    rounded={30}
+    height={60}
+     />
     </div>
+    
+    
 
       <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
 
-      <div className={styles.lightGreen}>
-      <div className="transparentbox">
-      
+
   <div className={styles.storycontainer}>
+    
+    <div className={styles.transparentbox}>
     <div className={styles.greentext}>
         <div className={styles.lightYellow}>
           <h2>Once upon a time...</h2></div>
@@ -166,15 +189,16 @@ export default function NFTDrop() {
 
       <p>So, join us on this journey, as we explore the world of these unique frogs, and discover the secrets that they hold. But be warned, not everything may be as it seems, and some of the frogs that you encounter may not be frogs at all.</p>
     </div>
-    </div>
-    </div>
-    </div>
+</div>
     <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+
     <div className={styles.container}>
     <div className="App">
       <LinkButton />
     </div>
+    
     </div>
+    
     <div className={styles.container}>
       <div className={styles.columns}>
         {phases.map((phase) => (
@@ -193,7 +217,7 @@ export default function NFTDrop() {
     </div>
   
   </div>
-  </div>
+ </div>
   );
 }
 
